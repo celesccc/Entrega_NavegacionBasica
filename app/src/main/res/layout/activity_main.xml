@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#2A0A29">
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botón 1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#FA58F4"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+    </Button>
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botón 2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#FA58F4"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+    </Button>
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botón 3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#FA58F4"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+    </Button>
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:background="#F781F3"
+        android:textSize="25sp"
+        android:hint="Introduzca texto"
+        android:textAlignment="center"
+        android:layout_gravity="center">
+    </EditText>
+
+</LinearLayout>
