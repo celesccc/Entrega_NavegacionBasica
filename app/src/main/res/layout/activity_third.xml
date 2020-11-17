@@ -11,10 +11,11 @@
         android:id="@+id/tv"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:background="@color/black"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:textAlignment="center">
 
     </TextView>
 

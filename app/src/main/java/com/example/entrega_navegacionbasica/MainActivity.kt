@@ -20,11 +20,9 @@ class MainActivity : AppCompatActivity() {
         val boton1 = findViewById<Button>(R.id.boton1)
         val boton2 = findViewById<Button>(R.id.boton2)
         val boton3 = findViewById<Button>(R.id.boton3)
-        val imagen_erizo = findViewById<ImageView>(R.id.erizo)
-        val tv = findViewById<TextView>(R.id.tv)
         val et = findViewById<EditText>(R.id.et)
 
-        val longitud = et.length()
+        var longitud = 0
 
         boton1.setOnClickListener{
             val intent = Intent(this, SecondActivity::class.java)
@@ -33,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         boton2.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
+            longitud = et.length()
             intent.putExtra(ThirdActivity.VAR1, longitud)
             startActivity(intent)
         }
@@ -40,12 +39,14 @@ class MainActivity : AppCompatActivity() {
         boton3.setOnClickListener {
             val aleatorio = Random.nextBoolean()
 
+            // No sé cómo hacer para que aparezcan la imagen y el textview distintos :(
+            // Lo he intentado pero ni idea.
+            // He pensando en crear otra activity para ello, pero como tiene que ser en las mismas lo he descartado.
             if (aleatorio) {
-                imagen_erizo.isVisible = true
                 val intent = Intent(this, SecondActivity::class.java)
+               // intent.putExtra(SecondActivity.VAR2, aleatorio)
                 startActivity(intent)
             } else {
-                tv.text = "El edit text de la activity anterior contenía: " + et.text
                 val intent = Intent(this, ThirdActivity::class.java)
                 startActivity(intent)
             }

@@ -13,14 +13,14 @@ class ThirdActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.activity_third)
 
         val tv = findViewById<TextView>(R.id.tv)
         val longitudEditText = intent.getIntExtra(VAR1,0)
 
         longitudEditText.let {
             tv.text = "El edit text de la activity anterior tenía una longitud" +
-                    "de " + longitudEditText + "caracteres"
+                    " de " + longitudEditText + " caracteres"
         }
 
 
