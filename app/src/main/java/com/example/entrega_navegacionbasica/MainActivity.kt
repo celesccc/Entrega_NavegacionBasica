@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.isVisible
+import java.util.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -31,8 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         boton2.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
-            longitud = et.length()
-            intent.putExtra(ThirdActivity.VAR1, longitud)
+            //longitud = et.length()
+            //intent.putExtra(ThirdActivity.VAR1, longitud)
+            intent.putExtra(ThirdActivity.VAR1, "El edit text de la activity anterior tenía una longitud de ${et.text.length}")
             startActivity(intent)
         }
 
@@ -45,9 +47,12 @@ class MainActivity : AppCompatActivity() {
             if (aleatorio) {
                 val intent = Intent(this, SecondActivity::class.java)
                // intent.putExtra(SecondActivity.VAR2, aleatorio)
+                intent.putExtra("PasarImagenNueva", R.mipmap.erizo)
                 startActivity(intent)
             } else {
                 val intent = Intent(this, ThirdActivity::class.java)
+                intent.putExtra(ThirdActivity.VAR1, "El edit text de la activity anterior contenía ${et.text.toString()
+                    .toUpperCase(Locale.getDefault())}")
                 startActivity(intent)
             }
 

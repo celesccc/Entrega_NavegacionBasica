@@ -11,11 +11,10 @@
         android:id="@+id/gato"
         android:layout_width="400dp"
         android:layout_height="250dp"
-        android:src="@mipmap/gato"
-        android:visibility="gone">
+        android:src="@mipmap/gato">
     </ImageView>
 
-    <ImageView
+   <ImageView
         android:id="@+id/erizo"
         android:layout_width="400dp"
         android:layout_height="250dp"
