@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             if (aleatorio) {
                 val intent = Intent(this, SecondActivity::class.java)
                // intent.putExtra(SecondActivity.VAR2, aleatorio)
-                intent.putExtra("PasarImagenNueva", R.mipmap.erizo)
+                intent.putExtra(SecondActivity.VAR2, R.mipmap.erizo)
                 startActivity(intent)
             } else {
                 val intent = Intent(this, ThirdActivity::class.java)

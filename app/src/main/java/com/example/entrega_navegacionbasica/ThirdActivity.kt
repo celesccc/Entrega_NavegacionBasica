@@ -25,9 +25,5 @@ class ThirdActivity : AppCompatActivity() {
             tv.text = "El edit text de la activity anterior tenía una longitud" +
                     " de " + longitudEditText + " caracteres"
         }*/
-
-
-
-
     }
 }
